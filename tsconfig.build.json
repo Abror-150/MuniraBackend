@@ -1,17 +1,4 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "rootDir": "./src", // faqat src ni root qilamiz
-    "outDir": "./dist",
-    "noEmit": false
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": [
-    "node_modules",
-    "test",
-    "dist",
-    "**/*spec.ts",
-    "**/*test.ts",
-    "prisma.config.ts" // ← prisma.config ni build dan chiqarib tashlang
-  ]
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }
