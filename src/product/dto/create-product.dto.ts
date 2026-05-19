@@ -62,6 +62,4 @@ export class CreateProductDto {
   @IsString()
   @IsNotEmpty()
   image: string;
-
-  
 }

@@ -27,8 +27,8 @@ async function bootstrap() {
     }),
   );
 
-  app.useStaticAssets(join(__dirname, '..', 'images'), {
-    prefix: '/images',
+  app.useStaticAssets(join(process.cwd(), 'dist', 'images'), {
+    prefix: '/images/',
   });
 
   app.enableCors({
